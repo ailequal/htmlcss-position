@@ -1,25 +1,41 @@
 /* everything */
-* {
+/* * {
   box-sizing: border-box;
   margin: 0px;
   border: 0px;
-}
-
-body {
-
-}
-
-/* header */
-h1 {
-
-}
+} */
 
 /* main */
-p {
-
+.main-container {
+  position: relative;
+  background-color: green;
+  height: 500px;
+  width: 1200px;
+}
+.main-container > div {
+  position: absolute;
+  background-color: blue;
+  height: 400px;
+  width: 500px;
 }
 
-/* footer */
-h6 {
+.second-container {
+  left: 520px;
+}
 
+.first-container > div,
+.second-container > div {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.first-container div:last-child {
+  position: absolute;
+  right: 0;
+}
+
+.second-container div:last-child {
+  position: absolute;
+  left: 50px;
 }
